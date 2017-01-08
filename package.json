@@ -1,0 +1,29 @@
+{
+  "name": "detect-process",
+  "version": "1.0.0",
+  "description": "Detect if environment is nodejs, electron, og browser",
+  "main": "index.js",
+  "dependencies": {
+    "detect-node": "^2.0.3",
+    "is-defined": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diversen/detect-process.git"
+  },
+  "keywords": [
+    "detect",
+    "process",
+    "electron"
+  ],
+  "author": "dennis iversen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diversen/detect-process/issues"
+  },
+  "homepage": "https://github.com/diversen/detect-process#readme"
+}
