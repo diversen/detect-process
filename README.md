@@ -1,6 +1,8 @@
 # detect-process
 
-Detect is the running process is `nodejs`, `electron`, or `browser`
+Detect is the running process is `nodejs`, `electron`, or `browser`.
+Then you may more easy create scripts that runs both in e.g. electron and
+the browser. 
 
 Usage in nodejs: 
 
