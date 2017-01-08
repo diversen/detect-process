@@ -16,7 +16,7 @@ Usage in a browser:
     <script src = "dist/detectProcess.js"></script>
     <script>
     var test = detectProcess.getName();
-    console.log(test);
+    console.log(test); // => nodejs, electron or browser
     </script>
 ~~~
 License MIT
