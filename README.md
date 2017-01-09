@@ -17,4 +17,17 @@ Usage in a browser:
     console.log(test); // => nodejs, phantom, electron or browser
     </script>
 ~~~
+
+Example in phantomjs: 
+~~~js
+var filename = './dist/detectProcess.js';
+injected = phantom.injectJs(filename);
+if (injected) {
+    var process = detectProcess.getName();
+    console.log(process); // => phantomjs
+    phantom.exit(0);
+}
+~~~
+
 License MIT
+
