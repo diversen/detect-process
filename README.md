@@ -1,6 +1,6 @@
 # detect-process
 
-Detect is the running process context is `nodejs`, `phantomjs`, `electron`, or `browser`. Then you may more easy create scripts that runs both in e.g. electron and the browser. 
+Detect if the running process context is `nodejs`, `phantomjs`, `electron`, or `browser`. Then you can create scripts that e.g. runs both in e.g. electron and the browser. Or at least find a way to determine which elements you will need to include, depending on the context.  
 
 Usage in nodejs: 
 ~~~js
