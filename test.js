@@ -1,4 +1,4 @@
 var test = require('./index.js');
 
-var txt = test.getName();
-console.log(txt);
+var process = test.getName();
+console.log(process);
