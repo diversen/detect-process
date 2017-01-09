@@ -1,11 +1,12 @@
 {
   "name": "detect-process",
-  "version": "1.0.1",
-  "description": "Detect if environment is nodejs, electron, og browser",
+  "version": "1.0.2",
+  "description": "Detect if context environment is nodejs, phantom, electron, og browser",
   "main": "index.js",
   "dependencies": {
     "detect-node": "^2.0.3",
-    "is-defined": "^1.0.0"
+    "is-electron": "^2.0.0",
+    "is-phantom": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +19,9 @@
   "keywords": [
     "detect",
     "process",
-    "electron"
+    "electron",
+    "phantomjs",
+    "context"	
   ],
   "author": "dennis iversen",
   "license": "MIT",

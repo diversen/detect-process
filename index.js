@@ -1,28 +1,20 @@
 var isNode = require('detect-node');
-var isDefined = require('is-defined');
+var isPhantom = require('is-phantom');
+var isElectron = require('is-electron');
 
-var isElectron = function () {
-
-    if (
-        eval(isDefined('window')) && 
-        eval(isDefined('window.process')) && 
-        eval(isDefined('window.process.type')) 
-        ) {
-            return true;
-    } 
-
-    return false;
-
-}
 
 var getName = function() {
-    if (isNode) {
-        if (isElectron()) {
-            return 'electron';
-        }
-        return 'nodejs';
+    if (isElectron()) {
+        return 'electron';
     }
 
+    if (isPhantom()) {
+	return 'phantom';
+    }
+    if (isNode) {
+        return 'nodejs';
+    }
+    
     return 'browser';
 };
 
